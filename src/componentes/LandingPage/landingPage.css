@@ -1,14 +1,14 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.navBar{
+.navBar {
   display: flex;
   justify-content: space-between;
 }
-.logo-barbearia{
+.logo-barbearia {
   width: 100px;
   height: 100px;
 }
@@ -26,13 +26,13 @@
   font-weight: 800;
 }
 
-.imagem-lua{
+.imagem-lua {
   width: 50px;
   height: 50px;
 }
 
-.banner{
-  background-image: url('/banner-barbearia.jpg');
+.banner {
+  background-image: url("/banner-barbearia.jpg");
   background-attachment: fixed;
   background-size: contain;
   background-position: center;
@@ -40,68 +40,89 @@
   height: 30rem;
 }
 
-.titulo{
+.titulo {
   text-align: center;
   margin-top: 10px;
 }
 
-.text{
+.text {
   padding: 20px;
   font-size: 16px;
-
 }
 
-.assinatura{
+.assinatura {
   text-align: center;
   font-size: 24px;
   font-family: "Great Vibes", cursive;
   letter-spacing: 2px;
-  color: #8B7D6B;
+  color: #8b7d6b;
 }
 
-@media(max-width:375px) {
-  .banner{
-    background-image: url('/banner-barbearia.jpg');
+@media (max-width: 375px) {
+  .banner {
+    background-image: url("/banner-barbearia.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
   }
-  .btn-style{
-  width: 5rem;
-  height: 3rem;
-  margin-top: 20px;
-  border-radius: 50px;
-  
+  .btn-style {
+    width: 5rem;
+    height: 3rem;
+    margin-top: 20px;
+    border-radius: 50px;
   }
-  .imagem-lua{
+  .imagem-lua {
     width: 30px;
     height: 30px;
   }
+  .icone-whats{
+    position: relative;
+    left: 95%;
+    bottom: 0.5rem;
+    width: 60px;
+    height: 60px;
+    animation: none !important;
+    cursor: cell;
+}
+    }
+@media (min-width: 375px) and (max-width: 768px) {
+  .banner {
+    background-image: url("/banner-barbearia.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
   }
-  
-
-@media(min-width:375px) and (max-width:768px){
-.banner{
-  background-image: url('/banner-barbearia.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-attachment: fixed;
+  .btn-style {
+    width: 8rem;
+    height: 4rem;
+    margin-top: 20px;
+    border-radius: 50px;
+  }
+  .imagem-lua {
+    width: 30px;
+    height: 30px;
+  }
 }
-.btn-style{
-width: 8rem;
-height: 4rem;
-margin-top: 20px;
-border-radius: 50px;
-
+.icone-whats {
+  position: relative;
+    left: 95%;
+    bottom: 0.5rem;
+    width: 60px;
+    height: 60px;
+    z-index: 3;
+    animation: jump 2s linear infinite;
 }
-.imagem-lua{
-  width: 30px;
-  height: 30px;
+@keyframes jump {
+  from {
+      transform: translateY(-15px);
+  }
+  50% {
+      transform: translate(0);
+  }
+  to {
+      transform: translateY(-15px);
+  }
 }
 
-}
-
-
-  

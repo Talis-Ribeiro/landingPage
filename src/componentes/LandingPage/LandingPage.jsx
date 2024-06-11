@@ -38,14 +38,17 @@ export default function LandingPage(){
       <p className={"text " + darkmodel}> Na Barbearia Seu Madruga, valorizamos a individualidade. Seja você um cavalheiro clássico ou um homem moderno, nossos serviços são adaptados para atender a todas as preferências. Dos cortes de cabelo mais tradicionais às mais ousadas barbas, estamos aqui para ajudá-lo a expressar sua verdadeira essência.
 Visite-nos hoje. Junte-se a nós na Barbearia Seu Madruga e experimente o serviço excepcional, a atmosfera acolhedora e a paixão pela arte do corte de cabelo. Estamos ansiosos para recebê-lo em nossa cadeira e transformar sua visita em uma experiência inesquecível. Venha descobrir por que somos mais do que apenas uma barbearia - somos uma tradição atemporal.
 
-
-
-
-
-
       </p>
     </main>
     <h3 className={"assinatura " + darkmodel}>Seu Madruga</h3>
+    <div className="icone-whats">
+          <a href="https://api.whatsapp.com/send?phone=5513997658156">
+            <img src="/icone-whats.png" alt="" />
+          </a>
+        </div>
     </div>
+   
+
+
   )
 }
